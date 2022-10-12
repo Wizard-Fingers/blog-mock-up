@@ -8,13 +8,13 @@ import fourth from "../assets/fourth.jpg";
 export const Layout = () => {
   return (
     <div>
-      <image
+      <img
         src={first}
         alt="bag with electronic items neatly placed around it"
       />
-      <image src={second} alt="/" />
-      <image src={third} alt="/" />
-      <image src={fourth} alt="/" />
+      <img src={second} alt="/" />
+      <img src={third} alt="/" />
+      <img src={fourth} alt="/" />
     </div>
   );
 };
