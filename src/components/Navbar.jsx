@@ -29,7 +29,8 @@ export const Navbar = () => {
       "text-white hover:text-gray-400 w-full md:w-auto h-full text-[1.3rem] font-[1rem] cursor-pointer py-2 block pl-4",
     socialMediaIcon:
       "text-white text-2xl font-bold cursor-pointer  hover:bg-gradient-to-r from-pink-500 via-red-700 to-orange-500 rounded ",
-    socialMediaIconContainer: "flex items-row justify-center space-x-4",
+    socialMediaIconContainer:
+      "flex items-row justify-center space-x-4 hover:animate-bounce",
   };
 
   let navClass = "w-full absolute top-20 left-0 bg-[#111111] md:relative md:top-auto md:w-auto md:block";
@@ -42,33 +43,36 @@ export const Navbar = () => {
       <div className={style.logedIn}>
         <div className={style.logedInText}>D</div>
       </div>
-      {/* make the value of this be null at a medium screen resolution*/}
 
-      <nav
-        className={navClass}
-      >
-        <ul className="w-full">
-          {links.map((link) => (
-            <li className="w-full md:w-auto inline-block  border-b-2 border-gray-900 md:border-hidden ">
-              <a href={link.link} className={style.links}>
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
-      <div className={style.socialMediaIconContainer}>
-        <FiTwitter className={style.socialMediaIcon} />
-        <FiInstagram className={style.socialMediaIcon} />
-        <FiCircle className={style.socialMediaIcon} />
+      <div className="">
+        <nav className={navClass}>
+          <ul className="w-full">
+            {links.map((link) => (
+              <li className="w-full md:w-auto inline-block  border-b-2 border-gray-900 md:border-hidden ">
+                <a href={link.link} className={style.links}>
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-      <div onClick={mobileNav} className="block">
-        {isOpen ? (
-          <AiOutlineClose className={style.socialMediaIcon} />
-        ) : (
-          <AiOutlineMenu className={style.socialMediaIcon}  />
-        )}
+      <div className="flex">
+        <div className={style.socialMediaIconContainer}>
+          <FiTwitter className={style.socialMediaIcon} />
+          <FiInstagram className={style.socialMediaIcon} />
+          <FiCircle className={style.socialMediaIcon} />
+        </div>
+        <div
+          onClick={mobileNav}
+          className="block ml-4 md:hidden "
+        >
+          {isOpen ? (
+            <AiOutlineClose className={style.socialMediaIcon} />
+          ) : (
+            <AiOutlineMenu className={style.socialMediaIcon} />
+          )}
+        </div>
       </div>
     </div>
   );
