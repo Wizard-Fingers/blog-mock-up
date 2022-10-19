@@ -10,14 +10,14 @@ export const Layout = () => {
     container: "flex flex-col",
     firstPhoto: " w-[40rem] md:w-[60rem]  object-cover pt-6 pb-3 ",
     firstPost: "p-4",
-    secondaryPhotos: "w-[20rem] flex ",
+    secondaryPhotos: "w-[10rem] h-[10rem] flex ",
     secondaryPosts: " flex flex-col p-4",
     secondaryPost: "",
-    mainText: " text-white text-[1.5rem] font-[1rem] text-justify",
+    mainText: " text-white text-[1.5rem]  ",
     secondaryText: " text-gray-400  font-small",
     date: "text-gray-500  text-sm",
     line: "border-b-2 border-gray-900 w-full mx-auto pt-2",
-  }
+  };
   return (
     <div className={style.container}>
       <div className={style.firstPost}>
@@ -39,26 +39,52 @@ export const Layout = () => {
       </div>
 
       <div className={style.secondaryPosts}>
-        <div className={style.secondaryPost}>
+        <div className="flex  flex-row-reverse w-full pb-6">
           <img
             className={style.secondaryPhotos}
             src={second}
             alt="a brown canvas bag next to a Swedish-modern type chair on a hardwood floor below a window"
           />
-          <div className={style.date}>Nov 2022</div>
-          <div className={style.mainText}>
-            Lorem ipsum dolor sit amet consectetur
+          <div className="w-4rem pb-3 mr-3">
+            <div className={style.mainText}>
+              <div className={style.date}>Nov 2022</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
           </div>
-          <div className={style.secondaryText}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quia, voluptate quae voluptatem quibusdam
-            exercitationem quidem voluptatibus quos quas. Quisquam, quae.
-            Quisquam
-          </div>
-          <div className={style.line}></div>
         </div>
-        <img src={third} alt="/" />
-        <img src={fourth} alt="/" />
+        <div className={style.line}></div>
+      </div>
+      <div className={style.secondaryPosts}>
+        <div className="flex  flex-row-reverse w-full pb-6">
+          <img
+            className={style.secondaryPhotos}
+            src={third}
+            alt="a brown canvas bag next to a Swedish-modern type chair on a hardwood floor below a window"
+          />
+          <div className="w-4rem pb-3 mr-3">
+            <div className={style.mainText}>
+              <div className={style.date}>Nov 2022</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+        <div className={style.line}></div>
+      </div>
+      <div className={style.secondaryPosts}>
+        <div className="flex  flex-row-reverse w-full pb-6">
+          <img
+            className={style.secondaryPhotos}
+            src={fourth}
+            alt="a brown canvas bag next to a Swedish-modern type chair on a hardwood floor below a window"
+          />
+          <div className="w-4rem pb-3 mr-3">
+            <div className={style.mainText}>
+              <div className={style.date}>Nov 2022</div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+        </div>
+        <div className={style.line}></div>
       </div>
     </div>
   );

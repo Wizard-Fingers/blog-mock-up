@@ -28,9 +28,8 @@ export const Navbar = () => {
     links:
       "text-white hover:text-gray-400 w-full md:w-auto h-full text-[1.3rem] font-[1rem] cursor-pointer py-2 block pl-4",
     socialMediaIcon:
-      "text-white text-2xl font-bold cursor-pointer  hover:bg-gradient-to-r from-pink-500 via-red-700 to-orange-500 rounded ",
-    socialMediaIconContainer:
-      "flex items-row justify-center space-x-4 hover:animate-bounce",
+      " text-white text-2xl font-bold cursor-pointer  hover:bg-gradient-to-r from-pink-500 via-red-700 to-orange-500 rounded ",
+    socialMediaIconContainer: "flex items-row justify-center space-x-4 ",
   };
 
   let navClass = "w-full absolute top-20 left-0 bg-[#111111] md:relative md:top-auto md:w-auto md:block";
