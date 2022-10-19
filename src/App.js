@@ -4,7 +4,7 @@ import { Layout } from "./components/Layout";
 import { Hero } from "./components/Hero";
 function App() {
   return (
-    <div>
+    <div className="w-full h-full">
       <Navbar />
       <Hero />
       <Layout />
