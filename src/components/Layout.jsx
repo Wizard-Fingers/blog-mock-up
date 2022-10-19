@@ -8,9 +8,9 @@ import fourth from "../assets/fourth.jpg";
 export const Layout = () => {
   const style = {
     container: "flex flex-col",
-    firstPhoto: " w-[40rem] md:w-[60rem]  object-cover pt-6 pb-3 ",
+    firstPhoto: " w-[35rem] md:w-[45rem] object-cover pt-6 pb-3 ",
     firstPost: "p-4",
-    secondaryPhotos: "w-[10rem] h-[10rem] flex ",
+    secondaryPhotos: "w-[12rem] h-[12rem] flex md:w-[22rem] md:h-[22rem] ",
     secondaryPosts: " flex flex-col p-4",
     secondaryPost: "",
     mainText: " text-white text-[1.5rem]  ",
@@ -39,48 +39,43 @@ export const Layout = () => {
       </div>
 
       <div className={style.secondaryPosts}>
-        <div className="flex  flex-row-reverse w-full pb-6">
-          <img
-            className={style.secondaryPhotos}
-            src={second}
-            alt="a brown canvas bag next to a Swedish-modern type chair on a hardwood floor below a window"
-          />
-          <div className="w-4rem pb-3 mr-3">
+        <div className="flex flex-row-reverse md:flex-row w-full pb-6">
+          <img className={style.secondaryPhotos} src={second} alt="/" />
+          <div className="w-4rem pb-3 mr-3 md:ml-3">
             <div className={style.mainText}>
               <div className={style.date}>Nov 2022</div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptates.
             </div>
           </div>
         </div>
         <div className={style.line}></div>
       </div>
       <div className={style.secondaryPosts}>
-        <div className="flex  flex-row-reverse w-full pb-6">
-          <img
-            className={style.secondaryPhotos}
-            src={third}
-            alt="a brown canvas bag next to a Swedish-modern type chair on a hardwood floor below a window"
-          />
-          <div className="w-4rem pb-3 mr-3">
+        <div className="flex  flex-row-reverse md:flex-row w-full pb-6">
+          <img className={style.secondaryPhotos} src={third} alt="/" />
+          <div className="w-4rem pb-3 mr-3 md:ml-3">
             <div className={style.mainText}>
               <div className={style.date}>Nov 2022</div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptates.
             </div>
           </div>
         </div>
         <div className={style.line}></div>
       </div>
       <div className={style.secondaryPosts}>
-        <div className="flex  flex-row-reverse w-full pb-6">
+        <div className="flex  flex-row-reverse md:flex-row w-full pb-6">
           <img
             className={style.secondaryPhotos}
             src={fourth}
             alt="a brown canvas bag next to a Swedish-modern type chair on a hardwood floor below a window"
           />
-          <div className="w-4rem pb-3 mr-3">
+          <div className="w-4rem pb-3 mr-3 md:ml-3">
             <div className={style.mainText}>
               <div className={style.date}>Nov 2022</div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptates.
             </div>
           </div>
         </div>
