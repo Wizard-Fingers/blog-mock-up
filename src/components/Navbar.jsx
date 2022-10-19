@@ -45,9 +45,9 @@ export const Navbar = () => {
 
       <div className="">
         <nav className={navClass}>
-          <ul className="w-[95%]">
+          <ul className="w-full">
             {links.map((link) => (
-              <li className="w-full md:w-auto inline-block  border-b-2 border-gray-900 md:border-hidden ml-2">
+              <li className="w-full md:w-auto inline-block  border-b-2 border-gray-900 md:border-hidden">
                 <a href={link.link} className={style.links}>
                   {link.name}
                 </a>
