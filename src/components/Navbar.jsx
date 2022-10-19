@@ -32,7 +32,7 @@ export const Navbar = () => {
     socialMediaIconContainer: "flex items-row justify-center space-x-4 ",
   };
 
-  let navClass = "w-full absolute top-20 left-0 bg-[#111111] md:relative md:top-auto md:w-auto md:block";
+  let navClass = "w-full absolute top-20 left-0 bg-[#111111] md:relative md:top-auto md:w-auto md:block pb-2";
   navClass += isOpen ? " block" : " hidden";
 
 
@@ -45,9 +45,9 @@ export const Navbar = () => {
 
       <div className="">
         <nav className={navClass}>
-          <ul className="w-full">
+          <ul className="w-[95%]">
             {links.map((link) => (
-              <li className="w-full md:w-auto inline-block  border-b-2 border-gray-900 md:border-hidden ">
+              <li className="w-full md:w-auto inline-block  border-b-2 border-gray-900 md:border-hidden ml-2">
                 <a href={link.link} className={style.links}>
                   {link.name}
                 </a>
