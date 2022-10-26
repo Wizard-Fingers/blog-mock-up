@@ -10,7 +10,7 @@ const SecondaryPosts = ({ imageUrl, postTitle,  postDate }) => {
           alt="/"
         />
         <div className="w-4rem pb-3 mr-3 md:ml-3">
-          <div className="text-white text-[1.5rem] md:text-[2.5rem] lg:text-[2rem]">
+          <div className="text-white text-[1.5rem] md:text-[2.7rem] lg:text-[2rem]">
             <div className="text-gray-500  text-sm">{postDate}</div>
             {postTitle}
           </div>
