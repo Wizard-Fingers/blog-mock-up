@@ -16,11 +16,13 @@ export const Footer = () => {
             imageUrl={footerFirst}
             postTitle="Lorem ipsum dolor sit"
             postDate="May 20, 2021"
+            postSubtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           />
           <SecondaryFooterPosts
             imageUrl={footerSecond}
             postTitle="Lorem ipsum dolor sit"
             postDate="May 20, 2021"
+            postSubtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           />
         </div>
         <div className="md:flex w-full md:justify-evenly">
@@ -28,11 +30,13 @@ export const Footer = () => {
             imageUrl={footerThird}
             postTitle="Lorem ipsum dolor sit"
             postDate="May 20, 2021"
+            postSubtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           />
           <SecondaryFooterPosts
             imageUrl={footerFourth}
             postTitle="Lorem ipsum dolor sit"
             postDate="May 20, 2021"
+            postSubtext="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
           />
         </div>
       </div>
